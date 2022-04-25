@@ -1,0 +1,14 @@
+<div
+  class="alert alert-warning mx-0 p-1 labels px-2"
+  role="button"
+  id="{{this.id}}"
+>
+  <div class="checkLabel">
+    <input type="checkbox" name="box" id="box" class="box">
+    <label class="choreLabel px-4 w-100" for="box">{{this.chore}}</label>
+  </div>
+  <div class="choreIcon">
+    <i class="fas fa-pencil-alt mx-1 editIcon" onclick="edit({{this.id}})"></i>
+    <i class="fas fa-trash-alt mx-1 eraseIcon" onclick="erase({{this.id}})"></i>
+  </div>
+</div>

@@ -5,20 +5,30 @@
         <h1 id="title">ToDo APP</h1>
       </div>
       <div class="todo-body">
-        <form action="" class="mx-4">
+        <form class="mx-4">
           <div class="input-group mb-3">
             <input
               type="text"
               class="form-control"
               placeholder="Escribe una tarea"
-              aria-label="tareas"
+              aria-label="chore"
               aria-describedby="basic-addon2"
+              name="chore"
+              id="chore"
             />
-            <a class="input-group-text btn bg-success text-light" href="#">Anotar</a>
+            <a
+              class="input-group-text btn bg-success text-light"
+              type="submit"
+              id="anotar"
+            >Anotar</a>
           </div>
         </form>
       </div>
-      <div class="todo-footer"></div>
+      <div class="todo-footer mx-4">
+          {{#each chores}}
+            {{>Tareas}}
+          {{/each}}
+      </div>
     </div>
   </div>
 </section>
